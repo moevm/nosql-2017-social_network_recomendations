@@ -1,0 +1,13 @@
+<div class="d-flex flex-row w-75" style="padding-top: 90px; margin: 0 auto;">
+  <div class="d-flex flex-column">
+    <app-tag-input (change)="changeSearchString($event)"></app-tag-input>
+    <div class="d-flex justify-content-around">
+      <mat-slide-toggle [color]="'primary'" [checked]="isOnlyCommon" (change)="isOnlyCommon = !isOnlyCommon">Only
+        common
+      </mat-slide-toggle>
+      <button class="btn btn-outline-primary" (click)="onButtonClick()">Request</button>
+    </div>
+    <app-friend-list [friends]="friends | async | searchFriends: searchString"></app-friend-list>
+  </div>
+  <graph [nodes]="nodes" [links]="links"></graph>
+</div>

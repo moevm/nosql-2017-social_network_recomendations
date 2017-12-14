@@ -1,0 +1,6 @@
+<div class="input-wrapper">
+  <div *ngFor="let item of items" class="token">
+    {{item.name}} <div (click)="friendsStore.deleteMarked(item)" style="cursor: pointer">x</div>
+  </div>
+  <input type="text" (input)="onSearchChange($event.target.value)">
+</div>

@@ -1,0 +1,7 @@
+<perfect-scrollbar style="max-width: 400px; max-height: 800px">
+  <div class="container">
+    <app-friend-item *ngFor="let friend of friends" [friend]="friend"
+                     [isMarked]="isMarked(friend)"></app-friend-item>
+  </div>
+</perfect-scrollbar>
+

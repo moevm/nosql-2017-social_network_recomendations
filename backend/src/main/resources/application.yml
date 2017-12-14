@@ -1,0 +1,26 @@
+spring:
+  data:
+    neo4j:
+      username: neo4j
+      password: neo4j
+
+server:
+  port: 8080
+
+security:
+  oauth2:
+    client:
+      access-token-uri: https://oauth.vk.com/access_token
+      user-authorization-uri: https://oauth.vk.com/authorize
+      scope: 262146
+      client-authentication-scheme: form
+      authentication-scheme: query
+      grant-type: authorization_code
+
+    resource:
+      user-info-uri: https://api.vk.com/method/users.get
+
+  user:
+      password: hello
+
+

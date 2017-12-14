@@ -1,0 +1,4 @@
+<div (click)="changeMark()" [ngClass]="{'friend-item': true, 'active': isMarked}">
+  <div class="user-image" [style.backgroundImage]="'url(' + friend.avatar_200 + ')'"></div>
+  <h5>{{friend.name}}</h5>
+</div>

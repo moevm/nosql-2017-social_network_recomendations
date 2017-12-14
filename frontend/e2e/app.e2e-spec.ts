@@ -1,6 +1,6 @@
 import { AppPage } from './app.po';
 
-describe('frontend App', () => {
+describe('vkneo4j App', () => {
   let page: AppPage;
 
   beforeEach(() => {

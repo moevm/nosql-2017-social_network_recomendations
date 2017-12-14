@@ -1,0 +1,15 @@
+.friend-item {
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+  width: 300px;
+  align-items: center;
+
+  h5{
+    margin-left: 10px;
+  }
+}
+
+.active {
+  background-color: beige;
+}

@@ -17,7 +17,7 @@ apply plugin: 'org.springframework.boot'
 apply plugin: 'war'
 apply plugin: 'org.sonarqube'
 
-group = 'eltech.ru'
+group = 'com.epam'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = 1.8
 
@@ -31,6 +31,7 @@ configurations {
 }
 
 dependencies {
+    compile('commons-fileupload:commons-fileupload:1.3.1')
     compile('org.springframework.boot:spring-boot-starter-data-neo4j')
     compile('org.springframework.boot:spring-boot-starter-security')
     compile('org.springframework.boot:spring-boot-starter-web')

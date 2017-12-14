@@ -1,0 +1,20 @@
+<div class="container w-75 mt-4">
+  <h4 class="text-center">Рекомендации на основе всех друзей</h4>
+  <ngx-carousel [inputs]="carouselTileOne">
+    <ngx-tile NgxCarouselItem *ngFor="let tile of carouselTileOneItems">
+      <app-group-item [groupDTO]="tile"></app-group-item>
+    </ngx-tile>
+    <button NgxCarouselPrev class="leftRs">&lt;</button>
+    <button NgxCarouselNext class="rightRs">&gt;</button>
+  </ngx-carousel>
+
+  <h4 class="text-center">Рекомендации на основе друзей со схожими интересами</h4>
+  <ngx-carousel [inputs]="carouselTileTwo">
+    <ngx-tile NgxCarouselItem *ngFor="let tile of carouselTileTwoItems">
+      <app-group-item [groupDTO]="tile"></app-group-item>
+    </ngx-tile>
+    <button NgxCarouselPrev class="leftRs">&lt;</button>
+    <button NgxCarouselNext class="rightRs">&gt;</button>
+  </ngx-carousel>
+
+</div>
